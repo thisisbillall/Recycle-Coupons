@@ -17,7 +17,7 @@ const Person = () => {
     <CardTitle tag="h5">
     <h4>Welcome Mohammad Bilal!</h4>
     <Button color='success' style={{'float':'right'}}>
-      Add Plastic
+      Request Muncipal
     </Button>
     </CardTitle>
     <CardText className='my-4'>
@@ -104,7 +104,7 @@ const Person = () => {
         1.5
       </td>
       <td>
-        Dhankawdai Muncipal
+        Dhankawdi Muncipal
       </td>
       <td>
         Recieved on 13/10/22
