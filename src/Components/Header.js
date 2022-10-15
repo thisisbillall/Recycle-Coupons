@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar expand='md'>
+      <Navbar expand='md' dark color='dark'>
         <NavbarBrand  onClick={()=>nav('/')}>Recycler</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -41,7 +41,7 @@ const Header = () => {
                 Industry
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
+            {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Profile
               </DropdownToggle>
@@ -51,9 +51,9 @@ const Header = () => {
                 <DropdownItem divider />
                 <DropdownItem>Logout</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown> */}
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          {/* <NavbarText>Simple Text</NavbarText> */}
         </Collapse>
       </Navbar>
     </div>
