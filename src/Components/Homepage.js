@@ -1,9 +1,11 @@
 import React from 'react'
 import Header from './Header'
+import Person from './Person'
 const Homepage = () => {
   return (
-    <div>Homepage
+    <div>
         <Header/>
+        <Person/>
     </div>
   )
 }
