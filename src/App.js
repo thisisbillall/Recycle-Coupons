@@ -7,14 +7,18 @@ import Muncipal from './Components/Muncipal';
 import Homepage from './Components/Homepage';
 import Person from './Components/Person';
 import Example from './Components/Example';
+import Header from './Components/Header';
 function App() {
   return (
-    <Routes>
-      <Route path ='/' element = {<Homepage/>}/>
-      <Route path='/user' element={<Person/>}/>
-      <Route path='/muncipal' element={<Muncipal/>}/>
-      <Route path='/ee' element={<Example/>}/>
-    </Routes>
+    <div>
+      <Header/>
+      <Routes>
+        <Route path ='/' element = {<Homepage/>}/>
+        <Route path='/user' element={<Person/>}/>
+        <Route path='/muncipal' element={<Muncipal/>}/>
+        <Route path='/ee' element={<Example/>}/>
+      </Routes>
+    </div>
   );
 }
 

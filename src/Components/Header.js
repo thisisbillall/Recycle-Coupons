@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import {
   Collapse,
@@ -8,37 +7,57 @@ import {
   Nav,
   NavItem,
   NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText,
 } from 'reactstrap';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const [collapsed, setCollapsed] = useState(true);
+  const toggle = () => setIsOpen(!isOpen);
+  const nav = useNavigate();
 
-    const toggleNavbar = () => setCollapsed(!collapsed);
-
-    
   return (
     <div>
-      <Navbar color="faded" light>
-        <NavbarBrand href="/" className="me-auto">
-          reactstrap
-        </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="me-2" />
-        <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
+      <Navbar expand='md'>
+        <NavbarBrand  onClick={()=>nav('/')}>Recycler</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink onClick={()=>nav('/user')}> User </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
+              <NavLink onClick={()=>nav('/muncipal')}>
+                PMC
               </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink onClick={()=>nav('/')}>
+                Industry
+              </NavLink>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Profile
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>Option 1</DropdownItem>
+                <DropdownItem>Option 2</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Logout</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </Nav>
+          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
