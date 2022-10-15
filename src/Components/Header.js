@@ -41,7 +41,7 @@ const Header = () => {
                 Industry
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
+            {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Profile
               </DropdownToggle>
@@ -51,9 +51,9 @@ const Header = () => {
                 <DropdownItem divider />
                 <DropdownItem>Logout</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown> */}
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          {/* <NavbarText>Simple Text</NavbarText> */}
         </Collapse>
       </Navbar>
     </div>
