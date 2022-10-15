@@ -16,9 +16,9 @@ const Muncipal = () => {
   <CardBody>
     <CardTitle tag="h5">
     <h4>Welcome Katraj Muncipal!</h4>
-    <Button color='success' style={{'float':'right'}}>
+    {/* <Button color='success' style={{'float':'right'}}>
       Request Muncipal
-    </Button>
+    </Button> */}
     </CardTitle>
     <CardText className='my-4'>
       <h5>Incoming Request</h5>
@@ -38,10 +38,13 @@ const Muncipal = () => {
         Location
       </th>
       <th>
-        Actions
+        Requests
       </th>
       <th>
         Coupon Type
+      </th>
+      <th>
+        Action
       </th>
     </tr>
   </thead>
@@ -70,7 +73,7 @@ const Muncipal = () => {
     caret
     color="dark"
   >
-    Primary
+    Concession on
   </DropdownToggle>
   <DropdownMenu dark>
   
@@ -87,18 +90,254 @@ const Muncipal = () => {
   </DropdownMenu>
 </UncontrolledDropdown>
       </td>
+      <td>
+        <Button color='warning'>Send</Button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">
+        2
+      </th>
+      <td>
+        Shubham Sardar
+      </td>
+      <td>
+        1.5
+      </td>
+      <td>
+        Dhankawdi 
+      </td>
+      <td>
+        <Button className="action-btns" color='success'>Accept</Button>
+        <Button className="action-btns" color='danger'>Reject</Button>
+
+      </td>
+      <td>
+      <UncontrolledDropdown>
+  <DropdownToggle
+    caret
+    color="dark"
+  >
+    Concession on
+  </DropdownToggle>
+  <DropdownMenu dark>
+  
+    <DropdownItem />
+    <DropdownItem>
+      Income Tax
+    </DropdownItem>
+    <DropdownItem>
+      Electricity Bill
+    </DropdownItem>
+    <DropdownItem>
+      Water Bill
+    </DropdownItem>
+  </DropdownMenu>
+</UncontrolledDropdown>
+      </td>
+      <td>
+        <Button color='warning'>Send</Button>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <th scope="row">
+        3
+      </th>
+      <td>
+        Balaji Nagar
+      </td>
+      <td>
+        2.5
+      </td>
+      <td>
+        Katraj Chowk
+      </td>
+      <td>
+        <Button className="action-btns" color='success'>Accept</Button>
+        <Button className="action-btns" color='danger'>Reject</Button>
+
+      </td>
+      <td>
+      <UncontrolledDropdown>
+  <DropdownToggle
+    caret
+    color="dark"
+  >
+    Concession on
+  </DropdownToggle>
+  <DropdownMenu dark>
+  
+    <DropdownItem />
+    <DropdownItem>
+      Income Tax
+    </DropdownItem>
+    <DropdownItem>
+      Electricity Bill
+    </DropdownItem>
+    <DropdownItem>
+      Water Bill
+    </DropdownItem>
+  </DropdownMenu>
+</UncontrolledDropdown>
+      </td>
+      <td>
+        <Button color='warning'>Send</Button>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <th scope="row">
+        4
+      </th>
+      <td>
+        Vaishnavi Gawli
+      </td>
+      <td>
+        2
+      </td>
+      <td>
+        Bharti Campus
+      </td>
+      <td>
+        <Button className="action-btns" color='success'>Accept</Button>
+        <Button className="action-btns" color='danger'>Reject</Button>
+
+      </td>
+      <td>
+      <UncontrolledDropdown>
+  <DropdownToggle
+    caret
+    color="dark"
+  >
+    Concession on
+  </DropdownToggle>
+  <DropdownMenu dark>
+  
+    <DropdownItem />
+    <DropdownItem>
+      Income Tax
+    </DropdownItem>
+    <DropdownItem>
+      Electricity Bill
+    </DropdownItem>
+    <DropdownItem>
+      Water Bill
+    </DropdownItem>
+  </DropdownMenu>
+</UncontrolledDropdown>
+      </td>
+      <td>
+        <Button color='warning'>Send</Button>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <th scope="row">
+        5
+      </th>
+      <td>
+        Mohammad Bilal
+      </td>
+      <td>
+        4.5
+      </td>
+      <td>
+        Katraj Chowk
+      </td>
+      <td>
+        <Button className="action-btns" color='success'>Accept</Button>
+        <Button className="action-btns" color='danger'>Reject</Button>
+
+      </td>
+      <td>
+      <UncontrolledDropdown>
+  <DropdownToggle
+    caret
+    color="dark"
+  >
+    Concession on
+  </DropdownToggle>
+  <DropdownMenu dark>
+  
+    <DropdownItem />
+    <DropdownItem>
+      Income Tax
+    </DropdownItem>
+    <DropdownItem>
+      Electricity Bill
+    </DropdownItem>
+    <DropdownItem>
+      Water Bill
+    </DropdownItem>
+  </DropdownMenu>
+</UncontrolledDropdown>
+      </td>
+      <td>
+        <Button color='warning'>Send</Button>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <th scope="row">
+        6
+      </th>
+      <td>
+        Mohammad Bilal
+      </td>
+      <td>
+        1.2
+      </td>
+      <td>
+        Katraj Chowk
+      </td>
+      <td>
+        <Button className="action-btns" color='success'>Accept</Button>
+        <Button className="action-btns" color='danger'>Reject</Button>
+
+      </td>
+      <td>
+      <UncontrolledDropdown>
+  <DropdownToggle
+    caret
+    color="dark"
+  >
+    Concession on
+  </DropdownToggle>
+  <DropdownMenu dark>
+  
+    <DropdownItem />
+    <DropdownItem>
+      Income Tax
+    </DropdownItem>
+    <DropdownItem>
+      Electricity Bill
+    </DropdownItem>
+    <DropdownItem>
+      Water Bill
+    </DropdownItem>
+  </DropdownMenu>
+</UncontrolledDropdown>
+      </td>
+      <td>
+        <Button color='warning'>Send</Button>
+      </td>
     </tr>
   </tbody>
 </Table>
     </div>
-    {/* <Button>
-      Go somewhere
-    </Button> */}
   </CardBody>
   <CardFooter>
-  <Button color='success'>
-      My Coupons
-    </Button>
   </CardFooter>
 </Card>
     </>
