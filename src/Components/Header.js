@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar expand='md'>
+      <Navbar expand='md' dark color='dark'>
         <NavbarBrand  onClick={()=>nav('/')}>Recycler</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
