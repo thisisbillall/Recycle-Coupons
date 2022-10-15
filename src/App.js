@@ -10,7 +10,7 @@ import Example from './Components/Example';
 import Header from './Components/Header';
 function App() {
   return (
-    <div>
+    <div style={{margin: "1.5rem"}}>
       <Header/>
       <Routes>
         <Route path ='/' element = {<Homepage/>}/>
